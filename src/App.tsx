@@ -1,10 +1,14 @@
+import { FC } from "react";
+import { Presentation } from "./pages/PresentationPage";
+import { Stack } from "./pages/StackPage";
 import "./app.css";
 
-function App() {
 
+const App: FC = () => {
   return (
     <>
-      
+      <Presentation />
+      <Stack />
     </>
   )
 }
