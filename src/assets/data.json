@@ -1,55 +1,79 @@
 [
     {
         "site": "https://gleimoura.github.io/fashionProject/",
-        "text": "Projeto de uma loja que fabrica roupas personalizáveis que utiliza HTML e CSS.",
-        "title": "FashionDriven"
+        "text": "Projeto de uma loja que fabrica roupas personalizáveis.",
+        "title": "FashionDriven",
+        "subtitle": "HTML, CSS, API",
+        "type": "frontend"
     },
     {
         "site": "https://gleimoura.github.io/projeto3-driveneats/",
-        "text": "Projeto que visou desenvolver um site de pedido de comidas rápidas utilizando JavaScript, HTML e CSS",
-        "title": "DrivenEats"
+        "subtitle": "JavaScript, HTML e CSS",
+        "text": "Projeto que visou desenvolver um site de pedido de comidas rápidas.",
+        "title": "DrivenEats",
+        "type": "frontend"
     },
     {
         "site": "https://gleimoura.github.io/projeto4-parrotscardgame/",
-        "text": "Um jogo da memória temático com aleatoridade, efeitos e transição, responsividade e papagaios dançantes para trabalhar JS",
-        "title": "ParrotsCardGame"
+        "subtitle": "JavaScript, HTML e CSS",
+        "text": "Um jogo da memória temático com aleatoridade, efeitos e transição, responsividade e papagaios dançantes.",
+        "title": "ParrotsCardGame",
+        "type": "frontend"
     },
     {
         "site": "https://projeto9-cineflex-self-kappa.vercel.app/",
+        "subtitle": "ReactJS e uso de API",
         "text": "Single-Page Application (SPA) para um cinema, usando React Router!",
-        "title": "CineFlex"
+        "title": "CineFlex",
+        "type": "frontend"
     },
     {
         "site": "https://projeto8-zaprecall-six-xi.vercel.app/",
-        "text": "Flashcards são cartões de contém uma pergunta/afirmação na sua frente e uma resposta atrás. O projeto utilizou React para desenvolver o front-end.",
-        "title": "ZapRecall"
+        "subtitle": "ReactJS",
+        "text": "Flashcards são cartões de contém uma pergunta/afirmação na sua frente e uma resposta atrás.",
+        "title": "ZapRecall",
+        "type": "frontend"
     },
     {
         "site": "https://projeto10-trackit-psi-pink.vercel.app/",
-        "text": "Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas! Utiliza React com ContextAPI para armazenar dados de usuário.",
-        "title": "TrackIt"
+        "subtitle": "ReactJS com ContextAPI",
+        "text": "Aplicação completa de acompanhamento de hábitos! Com direito a cadastro, login e muitas bibliotecas!",
+        "title": "TrackIt",
+        "type": "frontend"
     },
     {
         "site": "https://gleimoura.github.io/projeto11-tweteroo-front/",
+        "subtitle": "ReactJS",
+        "text": "Front End do projeto Tweetero.",
+        "title": "Twitteroo",
+        "type": "frontend" 
+    },
+    {
+        "subtitle": "Express e Javascript",
         "text": "Projeto para construir uma API Rest simpres com deploy no Render.",
-        "title": "Tweteroo front-end",
-        "backLink": "https://github.com/gleiMoura/projeto11-tweteroo",
-        "backText": "TweterooBackEnd"
+        "site": "https://github.com/gleiMoura/projeto11-tweteroo",
+        "title": "Twitteroo",
+        "type": "backend"
     },
     {
-        "text": "Projeto de um ecommerce de calçados que utiliza API Rest com Express no back e MONGODB no banco de dados!",
+        "text": "Projeto de um ecommerce de calçados!",
+        "subtitle": "Express e MongoDB",
+        "site": "https://github.com/gleiMoura/projeto14-sapatin-back",
         "title": "Sapatin",
-        "backLink": "https://github.com/gleiMoura/projeto14-sapatin-back",
-        "backText": "SapatinBackEnd"
+        "type": "backend"
     },
     {
-        "text": "Projeto com TypeScript que cria uma API de cartões de benefícios. A API é responsável pela criação, recarga, ativação, assim como o processamento de compras. Usa PostgreSQL no banco de dados.",
-        "backText": "Valex",
-        "backLink": "https://github.com/gleiMoura/projeto18-valex"
+        "text": "API de cartões de benefícios. A API é responsável pela criação, recarga, ativação, assim como o processamento de compras.",
+        "title": "Valex",
+        "subtitle": "PostgreSQL e Express",
+        "site": "https://github.com/gleiMoura/projeto18-valex",
+        "type": "backend"
     },
     {
-        "text": "Neste projeto desenvolvi um gerenciador de senha que utiliza Arquitetura em Camadas (controllers, middlewares, repositories, router, services), assim como a ORM Prisma.",
-        "backText": "DrivenPass",
-        "backLink": "https://github.com/gleiMoura/Drivenpass"
+        "text": "Neste projeto desenvolvi um gerenciador de senha que utiliza Arquitetura em Camadas (controllers, middlewares, repositories, router, services).",
+        "title": "DrivenPass",
+        "subtitle": "Prisma, Express, Typescript, PostgreSQL",
+        "backLink": "https://github.com/gleiMoura/Drivenpass",
+        "type": "backend"
     }
 ]
