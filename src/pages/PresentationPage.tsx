@@ -14,7 +14,7 @@ export const Presentation: FC = () => {
 
 const Main = styled.main`
     width: 100%;
-    height: calc(100vh);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
