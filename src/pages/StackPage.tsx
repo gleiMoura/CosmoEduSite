@@ -2,11 +2,12 @@ import { FC } from "react";
 import styled from "styled-components";
 import Card from "../components/Card";
 import Icon from "../components/Icon";
+import Title from "../components/Title";
 
 export const Stack: FC = () => {
     return (
         <Main>
-            <h1>Tecnologias</h1>
+            <Title title="Tecnologias" />
             <Cards>
                 <Card title="Front End" component={
                     <>
@@ -42,18 +43,6 @@ const Main = styled.main`
     justify-content: space-around;
     align-items: center;
     background-color: #F2C744;
-
-    h1{
-        font-family: "Roboto";
-        font-weight: 500;
-        font-size: 2rem;
-        text-align: center;
-        padding: 10px;
-        border-bottom: 5px solid white;
-        border-left: 3px solid white;
-        border-right: 3px solid white
-
-    }
 `;
 
 const Cards = styled.div`
