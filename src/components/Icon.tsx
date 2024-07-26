@@ -11,7 +11,7 @@ const Icon: FC<IconProps> = ({ name, link, size }) => {
     return (
         <IconMain>
             <p style={{ fontSize: `${size / 2}px`, color: "gray" }}>{name}</p>
-            <img src={link} alt={name} width={size} height={size} />           
+            <img src={link} alt={name} width={60} height={60} />           
         </IconMain>
     )
 };
@@ -19,7 +19,7 @@ const Icon: FC<IconProps> = ({ name, link, size }) => {
 export default Icon;
 
 const IconMain = styled.div`
-    width: 250px;
+    width: 200px;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
