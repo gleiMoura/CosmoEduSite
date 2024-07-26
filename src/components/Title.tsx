@@ -20,7 +20,6 @@ const TitleMain = styled.h1`
     font-size: 2rem;
     text-align: center;
     padding: 10px;
-    border-bottom: 5px solid white;
-    border-left: 3px solid white;
-    border-right: 3px solid white
+    background-color: white;
+    border-radius: 10px;
 `;
