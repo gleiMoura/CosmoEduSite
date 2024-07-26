@@ -1,6 +1,6 @@
 import { FC } from "react"
 import styled from "styled-components";
-import WhoAmI from "../assets/quem_sou_eu.png";
+import WhoAmI from "/images/quem_sou_eu.png";
 import Header from "../components/Header";
 
 export const Presentation: FC = () => {
