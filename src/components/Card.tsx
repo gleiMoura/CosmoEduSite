@@ -8,15 +8,18 @@ interface CardProps {
     image?: string,
     alt?: string,
     component?: ReactNode,
-    color?: string
+    color?: string,
+    border?: string
 };
 
-const Card: FC<CardProps> = ({ title, subtitle, text, image, alt, component, color }) => {
+const Card: FC<CardProps> = ({
+    title, subtitle, text, image, alt, component, color, border
+}) => {
     return (
-        <CardMain style={{ backgroundColor: color }}>
+        <CardMain style={{ backgroundColor: color, border: `2px solid ${border}` }}>
             <h2>{title}</h2>
             {subtitle && <h3>Tecnologias: {subtitle}</h3>}
-            {image && <img src={image} alt={alt} />}
+            {image && <img src={image} alt={alt} className="image" />}
             {component && component}
             {text && <p>{text}</p>}
         </CardMain>
@@ -26,24 +29,34 @@ const Card: FC<CardProps> = ({ title, subtitle, text, image, alt, component, col
 export default Card;
 
 const CardMain = styled.section`
-    width: 350px;
+    width: 380px;
     height: 400px;
     margin: 10px 0;
     color: black;
     font-family: "Roboto";
     font-weight: 500;
     border-radius: 10px;
-    padding: 30px;
+    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    &:hover{
+        border-color: #20E5F6;
+    }
 
-    img{
-        width: 80%;
+    .image{
+        width: 100%;
     }
 
     h2{
+        background-color: white;
+        padding: 5px;
+        box-sizing: border-box;
+        border-radius: 8px;
         font-weight: 500;
         font-size: 1.5rem;
         text-align: center;
