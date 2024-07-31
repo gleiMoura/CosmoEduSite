@@ -14,15 +14,17 @@ export const Portfolio: FC = () => {
             <div className="cards">
                 {cardsList.map((info, index) => {
                     return (
-                        <Card
-                            key={index}
-                            title={info.title || "undefined"}
-                            subtitle={info.subtitle}
-                            text={info.text}
-                            alt={info.title}
-                            component={info.type === "frontend" ? <Video path={`/videos/video${info.title}.mp4`} /> : <img src={`/images/${info.title}.png`} />}
-                            color="#F2C744"
-                        />
+                        <a href={info.site} target="_blank">
+                            <Card
+                                key={index}
+                                title={info.title || "undefined"}
+                                subtitle={info.subtitle}
+                                text={info.text}
+                                alt={info.title}
+                                component={info.type === "frontend" ? <Video path={`/videos/video${info.title}.mp4`} /> : <img src={`/images/${info.title}.png`} />}
+                                color="#F2C744"
+                            />
+                        </a>
                     )
                 })}
             </div>
@@ -34,6 +36,7 @@ const Main = styled.main`
     width: 100%;
     height: auto;
     min-height: 100vh;
+    background-color: #21272F;
 
     .cards {
         width: 100%;
@@ -43,5 +46,10 @@ const Main = styled.main`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 `;
