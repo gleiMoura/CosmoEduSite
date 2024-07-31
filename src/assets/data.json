@@ -73,7 +73,7 @@
         "text": "Neste projeto desenvolvi um gerenciador de senha que utiliza Arquitetura em Camadas (controllers, middlewares, repositories, router, services).",
         "title": "DrivenPass",
         "subtitle": "Prisma, Express, Typescript, PostgreSQL",
-        "backLink": "https://github.com/gleiMoura/Drivenpass",
+        "site": "https://github.com/gleiMoura/Drivenpass",
         "type": "backend"
     }
 ]
