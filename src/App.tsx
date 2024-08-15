@@ -1,16 +1,19 @@
 import { FC } from "react";
 import { Presentation } from "./pages/PresentationPage";
 import { Stack } from "./pages/StackPage";
-import "./app.css";
 import { Portfolio } from "./pages/PortfolioPage";
+import { ModeProvider } from "./contexts/ModeContext";
+import "./app.css";
 
 
 const App: FC = () => {
   return (
     <>
-      <Presentation />
-      <Stack />
-      <Portfolio />
+      <ModeProvider>
+        <Presentation />
+        <Stack />
+        <Portfolio />
+      </ModeProvider>
     </>
   )
 }
