@@ -1,9 +1,22 @@
 import styled from "styled-components";
+import { IoSunnyOutline } from "react-icons/io5";
+import { FC } from "react";
 
-const Header = () => {
+interface HeaderProps {
+    changeMode: () => void,
+    mode: boolean
+}
+
+const Header: FC<HeaderProps> = ({ changeMode, mode }) => {
+
     return (
         <HeaderMain>
             <a>Stack</a>
+            <Mode mode={mode} onClick={() => {
+                changeMode()
+            }}>
+                <IoSunnyOutline size={30} />
+            </Mode>
             <a>Portfólio</a>
         </HeaderMain>
     )
@@ -23,6 +36,19 @@ const HeaderMain = styled.header`
         font-size: 2rem;
         font-family: 'Roboto';
     }
+`;
+
+const Mode = styled.div<{ mode: boolean }>`
+    width: 80px;
+    height: 50px;
+    background-color: ${(props) => props.mode ? "#21272F" : "white"};
+    color: ${(props) => props.mode ? "white" : "#21272F"};
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
 `;
 
 export default Header;

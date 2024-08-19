@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC, useContext } from "react";
+import { ModeContext } from "../contexts/ModeContext";
 import styled from "styled-components";
 import Title from "../components/Title";
 import Data from "../assets/data.json";
@@ -7,8 +8,12 @@ import Video from "../components/Video";
 
 export const Portfolio: FC = () => {
     const cardsList = [...Data].reverse();
+    const modeContext = useContext(ModeContext);
+
+    const { mode } = modeContext;
+
     return (
-        <Main>
+        <Main mode={mode}>
             <Title title="Portfólio" />
 
             <div className="cards">
@@ -32,11 +37,16 @@ export const Portfolio: FC = () => {
     )
 };
 
-const Main = styled.main`
+const Main = styled.main<{ mode: boolean }>`
     width: 100%;
     height: auto;
     min-height: 100vh;
-    background-color: #21272F;
+    background-color: ${(props) => props.mode ? "#21272F" : "white"};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
 
     .cards {
         width: 100%;
