@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { IoSunnyOutline } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
 import { FC } from "react";
 
 interface HeaderProps {
@@ -15,7 +16,8 @@ const Header: FC<HeaderProps> = ({ changeMode, mode }) => {
             <Mode mode={mode} onClick={() => {
                 changeMode()
             }}>
-                <IoSunnyOutline size={30} />
+                {mode ? <IoMoon size={30} /> : <IoSunnyOutline size={30} />}
+                
             </Mode>
             <a>Portfólio</a>
         </HeaderMain>
