@@ -9,19 +9,23 @@ interface CardProps {
     alt?: string,
     component?: ReactNode,
     color?: string,
-    border?: string
+    border?: string,
+    siteLink?: string,
+    githubLink?: string
 };
 
 const Card: FC<CardProps> = ({
-    title, subtitle, text, image, alt, component, color, border
+    title, subtitle, text, image, alt, component, color, border, siteLink, githubLink
 }) => {
     return (
         <CardMain style={{ backgroundColor: color, border: `2px solid ${border}` }}>
             <h2>{title}</h2>
             {subtitle && <h3>Tecnologias: {subtitle}</h3>}
-            {image && <img src={image} alt={alt} className="image" />}
+            {image && <img src={image} alt={alt} />}
             {component && component}
             {text && <p>{text}</p>}
+            {siteLink && <a href={siteLink}>Link para site</a>}
+            {githubLink && <a href={githubLink}>Link para github</a>}
         </CardMain>
     )
 };
@@ -48,7 +52,7 @@ const CardMain = styled.section`
         border-color: #20E5F6;
     }
 
-    .image{
+    img{
         width: 100%;
     }
 
