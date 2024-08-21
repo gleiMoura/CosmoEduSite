@@ -72,4 +72,8 @@ const CardMain = styled.section`
         font-size: 1rem;
         text-align: start;
     }
+
+    @media (max-width: 400px) {
+        width: 320px;
+    }
 `
