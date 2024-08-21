@@ -41,18 +41,14 @@ const Main = styled.main<{ mode: boolean }>`
     width: 100%;
     height: auto;
     min-height: 100vh;
+    padding: 20px 0;
     background-color: ${(props) => props.mode ? "#21272F" : "white"};
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    box-sizing: border-box;
 
     .cards {
         width: 100%;
-        height: auto;
-        padding: 20px;
-        box-sizing: border-box;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
