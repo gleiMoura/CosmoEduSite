@@ -13,7 +13,7 @@ export const Portfolio: FC = () => {
     const { mode } = modeContext;
 
     return (
-        <Main mode={mode}>
+        <Main mode={mode} id="portfolio">
             <Title title="Portfólio" />
 
             <div className="cards">

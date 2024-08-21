@@ -35,7 +35,7 @@ export const Presentation: FC = () => {
         setMode(!mode)
     };
     return (
-        <Main mode={mode}>
+        <Main mode={mode} id="presentation">
             <Header changeMode={changeMode} mode={mode} />
             <div className="image">
                 {windowWidth >= 700 ?

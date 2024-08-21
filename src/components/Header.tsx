@@ -12,14 +12,22 @@ const Header: FC<HeaderProps> = ({ changeMode, mode }) => {
 
     return (
         <HeaderMain>
-            <a>Stack</a>
+            <a onClick={() => {
+                document.getElementById("tecnologies")
+                    ?.scrollIntoView({ behavior: "smooth" })
+            }
+            }>Stack</a>
             <Mode mode={mode} onClick={() => {
                 changeMode()
             }}>
                 {mode ? <IoMoon size={30} /> : <IoSunnyOutline size={30} />}
-                
+
             </Mode>
-            <a>Portfólio</a>
+            <a onClick={() => {
+                document.getElementById("portfolio")
+                    ?.scrollIntoView({ behavior: "smooth" })
+            }
+            }>Portfólio</a>
         </HeaderMain>
     )
 };
@@ -37,6 +45,7 @@ const HeaderMain = styled.header`
         font-weight: 500;
         font-size: 2rem;
         font-family: 'Roboto';
+        cursor: pointer;
     }
 `;
 

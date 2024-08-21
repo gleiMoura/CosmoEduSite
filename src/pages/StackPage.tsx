@@ -11,7 +11,7 @@ export const Stack: FC = () => {
     const { mode } = modeContext;
 
     return (
-        <Main mode={mode}>
+        <Main mode={mode} id="tecnologies">
             <Title title="Tecnologias" />
             <Cards>
                 <Card title="Front End" color={mode ? "white" : "#F2C744"} component={
